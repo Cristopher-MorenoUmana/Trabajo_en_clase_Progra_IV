@@ -1,11 +1,12 @@
 function InicioPage() {
+  const Author = import.meta.env.VITE_AUTHOR;
+
+  //const API_BASE_URL = import.meta.env.VITE_API_URL;
+  console.log(Author);
   return (
     <div>
       <h1>Sistema de gestión</h1>
-      <p>Bienvenido a la aplicación React conectada con la API en Express.</p>
-      <p>
-        Usa el menú para ingresar al módulo de usuarios o al módulo de productos.
-      </p>
+      <p>Creado por: {import.meta.env.VITE_AUTHOR}</p>
     </div>
   );
 }
